@@ -1,0 +1,26 @@
+name: Lisa Wang
+UCLA ID number: 105502901
+a. I had to overcome three obstacles
+ - for checking if the first letter is uppercase, I had to go to the book and learn about how to specifically use this command isupper(). After I have done that, I realized that the cin is storing the value as a string and that I now need to learn how to get the first letter of the string. 
+ - the second obstacle I had to overcome was finding the missing bracket throughout my code. It was really a deep struggle because I had so many nested if statement brackets. I ended up restarting the process because I deleted three brackets in the attempt of deleting one bracket. 
+ - the third obstacle I had to overcome was understanding conceptually why a leap year was not 1900 or 1500. I found an article online by Neil deGrasse Tyson that explained it really well. I digress--- the leap year offset was first checking if the year is divisible by 4, then adding another condition that if it is divisible by 100, that it is also divisible by 400. I used parentheses to put them all in one conditional line. 
+
+b. the test data that could be used to thoroughly test my program and the reason for each test. 
+test case list that my program do handle correctly: 
+leap year (February 29, 2020) 
+invalid month by non-uppercase (january 1, 2021) 
+invalid day (January -2, 2021) 
+space after month entering (January  1, 2021)
+entering day in the form "01" instead of "1" (January 01, 2021) 
+
+test case list that my program do not handle correctly: 
+1. all user input written in one single line (month: January, day: 13 29) (result: January 13, 29 was a Saturday!) This input is relevant because users often type in mistakes and expect a different outcome.
+
+2. when the user input a leap day on a non-leap year (month: February, day: 29, year: 1900) (result: February 29, 1900 was a Wednesday!) 
+comment: but we know that such a day do not exist 
+
+3. when the user input a month that doesn't have a 31st 
+(month: April, day: 31, year: 2021) (result: April 31, 2021 was a Saturday!)
+comment: this is not a valid statement because there isn't a April 31st. Which applies to June, September, November too. 
+
+
